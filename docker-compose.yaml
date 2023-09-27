@@ -6,4 +6,4 @@ services:
     container_name: aula_docker
     network_mode: host
     stdin_open: true
-    command: sh -c "echo 'print('Meu primeiro container')' >> codigo.py && python3 codigo.py"
+    command: /bin/bash -c "python3 -c 'print(\"Meu primeiro Container\")'"
