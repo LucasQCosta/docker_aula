@@ -2,8 +2,8 @@ version: '3.9'
 
 services:
   meu_python:
-    image: aula
-    container_name: primeira_imagem
+    image: primeira_imagem
+    container_name: aula_docker
     network_mode: host
     stdin_open: true
     command: sh -c "echo 'print('Meu primeiro container')' >> codigo.py && python3 codigo.py"
